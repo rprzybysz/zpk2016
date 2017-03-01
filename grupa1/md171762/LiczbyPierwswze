@@ -1,0 +1,1 @@
+#include <iostream>using namespace std;int main(){    int n,t,j;    cin>>n;    if (n%2==0){            //cout<<"zlozona - podzielna przez 2";            return 0;    }    t=3;    while(t<n){        if (n%t==0){//cout<<"zlozona - podzielna przez " << t;                    return 0;}        t=t+2;    }    //cout<<"zlozona";    return 1;}
