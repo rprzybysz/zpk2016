@@ -1,0 +1,28 @@
+#include <iostream>
+#include <stdio.h>
+
+
+using namespace std;
+
+int main()
+{
+    int n;
+    bool flaga=false;
+    cin >> n;
+    for(int i=2;i*i<n;i++)
+    {
+        if(n%i==0)
+        {
+            cout<<"zlozona"<<endl;
+            flaga=true;
+            break;
+        }
+    }
+    if(flaga==false)
+        {
+            cout<<"pierwsza"<<endl;
+        }
+    return 0;
+}
+
+//Algorytm sprawdza, czy liczba dzieli sie przez kazda liczbe po kolei, choc mozna by nie sprawdzac, czy dzieli sie przez wielokrotnosci 2,3 itd
